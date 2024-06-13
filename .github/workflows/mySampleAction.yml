@@ -1,6 +1,5 @@
 
-name: Java CI with Maven
-
+-name: Java CI with Maven
 on:
   push:
     branches: [ "master" ]
@@ -20,5 +19,8 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean install
+    - name: Build the Docker image
+      run: docker build -t github-actions-demo-jar -f ../../Dockerfile
+
 
   
