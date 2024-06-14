@@ -1,0 +1,14 @@
+on:
+  workflow_dispatch:
+    inputs:
+      Code version:
+        description: Choose the code version
+        options:
+          - 1.0
+          - 2.0
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      name: Display the chosen input
+      run: echo "Chosen value is ${{ github.event.inputs.code version }} "
