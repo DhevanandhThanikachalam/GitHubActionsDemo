@@ -9,7 +9,7 @@ on:
           - One
           - Two
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Display the chosen input
