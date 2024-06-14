@@ -1,3 +1,4 @@
+name: Input Github Actions
 on:
   workflow_dispatch:
     inputs:
