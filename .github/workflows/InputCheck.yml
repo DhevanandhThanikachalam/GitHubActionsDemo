@@ -2,8 +2,9 @@ name: Input Github Actions
 on:
   workflow_dispatch:
     inputs:
-      Code version:
+      CodeVersion:
         description: Choose the code version
+        type: choice
         options:
           - One
           - Two
