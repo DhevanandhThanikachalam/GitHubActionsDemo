@@ -10,4 +10,4 @@ jobs:
           uses: actions/checkout@v2
         - name: Display the yml content
           run: |
-            yq r Env.yml
+            yq Env.yml
