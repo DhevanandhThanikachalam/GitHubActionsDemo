@@ -1,0 +1,11 @@
+name: Check yq
+on:
+  workflow_dispatch:
+
+jobs:
+  yqCheck:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Display the yml content
+          cd: ../../Env.yml
+          run:  yq Env.yml
