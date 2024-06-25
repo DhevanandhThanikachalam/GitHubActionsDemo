@@ -6,7 +6,8 @@ jobs:
   yqCheck:
       runs-on: ubuntu-latest
       steps:
+        - name: Checkout repository
+          uses: actions/checkout@v2
         - name: Display the yml content
           run: |
-            cd ../../Env.yml
-            yq Env.yml
+            yq r Env.yml
