@@ -7,5 +7,6 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Display the yml content
-          cd: ../../Env.yml
-          run:  yq Env.yml
+          run: |
+            cd ../../Env.yml
+            yq Env.yml
