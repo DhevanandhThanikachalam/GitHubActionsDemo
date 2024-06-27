@@ -16,5 +16,5 @@ jobs:
           run: echo "Chosen value is ${{ github.event.inputs.CodeVersion }}"
         - name: Check Lowercase
           run: |
-             echo "REPO="{Hi,,}" >>${GITHUB_ENV}
+             echo "REPO="Hi,," >>${GITHUB_ENV}
              echo "The value of REPO is: ${REPO}"
