@@ -15,5 +15,5 @@ jobs:
         - name: Display the chosen input
           run: |
            VAR = Chosen value is ${{ github.event.inputs.CodeVersion }}
-           echo "$VAR" | tr '[:upper:]' '[:lower:]'
+           echo "VAR = $(echo "$VAR" | tr '[:upper:]' '[:lower:]'"
           
