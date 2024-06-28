@@ -14,5 +14,5 @@ jobs:
       steps:
         - name: Display the chosen input
           run: |
-           echo "Chosen value is ${${{ github.event.inputs.CodeVersion }},,}"
+           echo Chosen value is ${${{ github.event.inputs.CodeVersion }},,}
           
