@@ -14,6 +14,6 @@ jobs:
       steps:
         - name: Display the chosen input
           run: |
-           VAR=Chosen value is ${{ github.event.inputs.CodeVersion }}
+           VAR="Chosen value is ${{ github.event.inputs.CodeVersion }}"
            echo "VAR_LC=${VAR,,}" >>${GITHUB_OUTPUT}
           
