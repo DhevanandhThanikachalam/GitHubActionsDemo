@@ -6,15 +6,13 @@ on:
         description: Choose the code version
         type: choice
         options:
-          - One
-          - Two
+          - ONE
+          - TWO
 jobs:
   InputCheck:
       runs-on: ubuntu-latest
       steps:
         - name: Display the chosen input
           run: |
-           VAR="Chosen value is ${{ github.event.inputs.CodeVersion }}"
-           VAR_LC=${VAR,,}
-           echo ${VAR_LC}
+           echo "Chosen value is ${${{ github.event.inputs.CodeVersion }},,}"
           
