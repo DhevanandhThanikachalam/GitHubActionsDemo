@@ -14,7 +14,12 @@ jobs:
       steps:
         - name: Display the chosen input
           run: |
-           VAR=(${{ github.event.inputs.CodeVersion }}",,)
+           VAR=(${{ github.event.inputs.CodeVersion }},,)
            echo VAR
+           MY_VAR="Dheva"
+        - name: Check variable
+          id: variables
+            MY_VAR="Updated value"
+            echo MY_VAR
            
           
