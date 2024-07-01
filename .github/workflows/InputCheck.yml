@@ -19,7 +19,8 @@ jobs:
            MY_VAR="Dheva"
         - name: Check variable
           id: variables
-            MY_VAR2="Updated value"
-            echo MY_VAR2
+          run: |
+            MY_VAR="Updated value"
+            echo MY_VAR
            
           
