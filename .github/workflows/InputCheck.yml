@@ -20,7 +20,9 @@ jobs:
         - name: Check variable
           id: variables
           run: |
-            MY_VAR="Updated value"
+            if[ "${{ github.event.inputs.CodeVersion }}" == "TWO"]; then
+              MY_VAR="Updated value"
+            fi
             echo MY_VAR
            
           
