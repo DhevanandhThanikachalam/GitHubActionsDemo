@@ -14,15 +14,6 @@ jobs:
       steps:
         - name: Display the chosen input
           run: |
-           VAR=(${{ github.event.inputs.CodeVersion }},,)
-           echo VAR
-           MY_VAR="Dheva"
-        - name: Check variable
-          id: variables
-          run: |
-            if[ "${{ github.event.inputs.CodeVersion }}" == "TWO"]; then
-              MY_VAR="Updated value"
-            fi
-            echo MY_VAR
+           echo "VAR_LOWERCASE=$(echo "${{inputs.CodeVersion}}" | tr '[:upper:]' '[:lower:]')" >> $GITHUB_OUTPUT
            
           
