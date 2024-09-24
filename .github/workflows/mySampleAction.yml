@@ -1,12 +1,8 @@
 on:
-  push:
-    branches: [ "master" ]
-
+ workflow_dispatch
 jobs:
-  build:
-
+  TestSparse:
     runs-on: ubuntu-latest
-
     steps:
       - name: Set up JDK 1.8
         uses: actions/checkout@v3
