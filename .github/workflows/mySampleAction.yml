@@ -12,8 +12,6 @@ jobs:
           repository: DhevanandhThanikachalam/GitHubActionsDemo
           ref: main
           path: TestDownload
-          sparse-checkout: |
-            Test1
       - name: List folders
         run: ls -la TestDownload
 
