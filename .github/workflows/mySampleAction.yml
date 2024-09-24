@@ -1,10 +1,12 @@
+name: SampleAction 
+
 on:
  workflow_dispatch
 jobs:
   TestSparse:
     runs-on: ubuntu-latest
     steps:
-      - name: Set up JDK 1.8
+      - name: TestSparse
         uses: actions/checkout@v3
         with:
           repository: DhevanandhThanikachalam/GitHubActionsDemo
